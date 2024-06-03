@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>MVO-Vorstand</title>
+    <style>
+        @font-face {
+            font-family: "HWGothic";
+            src: url(../font-families/HWYGEXPD.TTF) format("truetype");
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            padding-top: 20px;
+        }
+        h3 {
+            padding-top: 10px;
+            font-size: 24px;
+            font-family: HWGothic;
+        }
+        .musiker-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1px;
+            padding: 2px;
+        }
+        .musikerbild {
+            flex: 1 1 calc(30% - 15px);
+            max-width: calc(30% - 15px);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        figure {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 auto; 
+        }
+        figure img {
+            max-width: 100%;
+            height: auto;
+            padding-left: 0px;
+        }
+        figure figcaption {
+            background-color: #e0e0e0;
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body class="Zentriert">
+    <nav>
+        <ul>
+            <li><a href="../index.html"><img class="logonav" src="../pics/mvlogovektor.svg" alt="Logo MVO"></a></li>
+            <li class="hovern"><a href="./termine.html">Termine</a></li>
+            <li class="hovern"><a href="./musiker.html">Musiker</a></li>
+            <li class="hovern"><a class="active" href="./vorstand.html">Vorstand</a></li>
+            <li class="hovern"><a href="./geschichte.html">Geschichte</a></li>
+            <li class="hovern"><a href="./kontakt.html">Kontakt</a></li>
+            <li class="hovern"><a href="./anfrage.html">Anfragen</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Der Vorstand</h1>
+        <div class="musiker-container">
+            <div class="musikerbild">
+                <h3>Obmann:</h3>
+                <figure>
+                    <a href="../pics/franz-s.jpg" target="_blank"><img src="../pics/franz-s.jpg" alt="Franz Sturmlechner"></a>
+                    <figcaption>Franz Sturmlechner</figcaption>
+                </figure>
+            </div>
+            <div class="musikerbild">
+                <h3>Obmann Stellvertreter:</h3>
+                <figure>
+                    <a href="../pics/martin-h.jpg" target="_blank"><img src="../pics/martin-h.jpg" alt="Martin Heindl"></a>
+                    <figcaption>Martin Heindl</figcaption>
+                </figure>
+            </div>
+            <div class="musikerbild">
+                <h3>Kapellmeister:</h3>
+                <figure>
+                    <a href="../pics/gerhard-a.jpg" target="_blank"><img src="../pics/gerhard-a.jpg" alt="Gerhard Adensamer"></a>
+                    <figcaption>Gerhard Adensamer</figcaption>
+                </figure>
+            </div>
+            <div class="musikerbild">
+                <h3>Kapellmeister Stv.:</h3>
+                <figure>
+                    <a href="../pics/irene-k.jpg" target="_blank"><img src="../pics/irene-k.jpg" alt="Irene Kraus"></a>
+                    <figcaption>Irene Kraus</figcaption>
+                </figure>
+            </div>
+            <div class="musikerbild">
+                <h3>Stabführer:</h3>
+                <figure>
+                    <a href="../pics/willi-k.jpg" target="_blank"><img src="../pics/willi-k.jpg" alt="Willibald Karl"></a>
+                    <figcaption>Willibald Karl</figcaption>
+                </figure>
+            </div>
+            <div class="musikerbild">
+                <h3>Schriftführerin:</h3>
+                <figure>
+                    <a href="../pics/maria-p.jpg" target="_blank"><img src="../pics/maria-p.jpg" alt="Maria Punz"></a>
+                    <figcaption>Maria Punz</figcaption>
+                </figure>
+            </div>
+            <div class="musikerbild">
+                <h3>Kassier:</h3>
+                <figure>
+                    <a href="../pics/christina-k.jpg" target="_blank"><img src="../pics/christina-k.jpg" alt="Christina Karl"></a>
+                    <figcaption>Christina Karl</figcaption>
+                </figure>
+            </div>
+            <div class="musikerbild">
+                <h3>Kassier Stellvertreter:</h3>
+                <figure>
+                    <a href="../pics/andi-h.jpg" target="_blank"><img src="../pics/andi-h.jpg" alt="Andreas Halmer"></a>
+                    <figcaption>Andreas Halmer</figcaption>
+                </figure>
+            </div>
+            <div class="musikerbild">
+                <h3>Jugendreferent:</h3>
+                <figure>
+                    <a href="../pics/jakob-d.jpg" target="_blank"><img src="../pics/jakob-d.jpg" alt="Jakob Drescher"></a>
+                    <figcaption>Jakob Drescher</figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div  class="fusseffekte">
+            <a class="fusseffekte" href="https://www.instagram.com/musikverein_oberndorf_melk/"><img src="../pics/InstaOutlines.svg" height="50px" width="56px" alt="InstaOutlines"></a>
+            <img src="../pics/wappen-obi.png" alt="Wappen Oberndorf">
+            <a class="fusseffekte" href="https://www.facebook.com/groups/295921213833277"><img src="../pics/FacebookOutlines.svg" height="31.5px" width="35px" alt="Facebook"></a>
+            <p class="fusseffekte">&copy; 2024 Musikverein Oberndorf an der Melk. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>   
+</html>

@@ -73,23 +73,28 @@
     </nav>
     <main>
         <h1>Anfragen</h1>
-        <h3 id="block">Bei Anfragen bezüglich Frühschoppen, Dämmerschoppen, Begräbnissen, Gestaltungen von Messen, oder auf besonderem Wunsch, Ausrückungen in Quartett-/Quintett- Besetzungen und dergleichen können Sie uns zusätzlich unter der Nummer des Kapellmeisters erreichen. <a href="./kontakt.html">(Kontakt)</a> </h3>
-        <form action="https://myserver123.at" method="get">
-            <fieldset>
-                <legend>Ihre Anfrage:</legend>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="Name" placeholder="Max Mustermann">
-                
-                <label for="phone">Tel/Mobil:</label>
-                <input type="tel" id="phone" name="Telefonnummer" placeholder="0665/123456789">
-                
-                <label for="date">Wann ist Ihr Event:</label>
-                <input type="date" id="date" name="Datum">
-                
-                <label for="message">Beschreiben Sie Ihre Anfrage:</label>
-                <textarea id="message" name="Anfrage"></textarea>
-            </fieldset>
-        </form>
+        <!--<h3 id="block">Bei Anfragen bezüglich Frühschoppen, Dämmerschoppen, Begräbnissen, Gestaltungen von Messen, oder auf besonderem Wunsch, Ausrückungen in Quartett-/Quintett- Besetzungen und dergleichen können Sie uns zusätzlich unter der Nummer des Kapellmeisters erreichen. <a href="./kontakt.html">(Kontakt)</a> </h3>-->
+    
+        <h3 id="block">
+            Wichtiger Hinweis
+        
+            Bitte beachten Sie, dass diese Unterwebseite derzeit noch in einer experimentellen Phase ist. Wir bitten Sie
+            daher, aus
+            Sicherheitsgründen keine persönlichen Daten einzugeben. 
+        </h3>
+   
+        <body>
+            <h2>Anfrageformular</h2>
+            <form action="send_mail.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">E-Mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Nachricht:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <input type="submit" value="Absenden">
+            </form>
+    
     </main>
     <footer>
         <div class="fusseffekte">
@@ -99,5 +104,7 @@
             <p class="fusseffekte">&copy; 2024 Musikverein Oberndorf an der Melk. Alle Rechte vorbehalten.</p>
         </div>
     </footer>   
-</body>
+</body> 
+
+
 </html>

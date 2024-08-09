@@ -14,8 +14,8 @@ src: url(../font-families/kenyan\ coffee\ rg.otf) format("truetype");
 }
 
 *{
-padding: 0;
-margin: 0;
+padding: 5px;
+margin: 5px;
 }
 
 .Zentriert {

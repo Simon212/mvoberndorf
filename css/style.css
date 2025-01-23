@@ -140,5 +140,57 @@ footer :hover {
   font-weight: bold;
 }
 
+/*NEU*/
+.musiker-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.musikerbild {
+    flex: 1 1 calc(25% - 20px); /* 4 Spalten */
+    max-width: calc(25% - 20px);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+figure {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+figure figcaption {
+    background-color: #e0e0e0;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .musikerbild {
+        flex: 1 1 calc(50% - 20px); /* 2 Spalten auf kleineren Bildschirmen */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .musikerbild {
+        flex: 1 1 100%; /* 1 Spalte auf sehr kleinen Bildschirmen */
+        max-width: 100%;
+    }
+}
+
 
 

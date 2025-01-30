@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <title>MVO-Musiker</title>
     <style>
         @font-face {
@@ -32,6 +31,12 @@
             flex: 1 1 300px;
             max-width: 300px;
         }
+        .group-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            justify-items: center;
+        }
         figure {
             background-color: #f0f0f0;
             padding: 10px;
@@ -48,25 +53,19 @@
             border-radius: 5px;
             margin-top: 5px;
         }
-        .group-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px; /* Abstand zwischen Bildern reduziert */
-            justify-items: center;
-        }
         footer {
             margin-top: 40px;
             text-align: center;
             padding: 10px;
-            background-color: #e0e0e0; /* Hintergrundfarbe angepasst */
-            color: #333; /* Schriftfarbe dunkler für besseren Kontrast */
+            background-color: #e0e0e0;
+            color: #333;
         }
         footer img {
             margin: 0 10px;
         }
         footer a {
             text-decoration: none;
-            color: #333; /* Sicherstellen, dass Links sichtbar sind */
+            color: #333;
         }
     </style>
 </head>
@@ -86,49 +85,27 @@
         <h1>Musiker</h1>
         <div class="musiker-container">
             <div class="musiker-group">
-                <h3>Marketenderinnnen:</h3>
+                <h3>Marketenderinnen:</h3>
                 <div class="group-grid">
-                    <figure>
-                        <a href="../pics/agnes-h.jpg" target="_blank">
-                            <img src="../pics/agnes-h.jpg" alt="Agnes Halmer">
-                        </a>
-                        <figcaption>Agnes Halmer</figcaption>
-                    </figure>
-                    <figure>
-                        <a href="../pics/sandra-s.jpg" target="_blank">
-                            <img src="../pics/sandra-s.jpg" alt="Sandra Scharner">
-                        </a>
-                        <figcaption>Sandra Scharner</figcaption>
-                    </figure>
+                    <figure><a href="../pics/agnes-h.jpg" target="_blank"><img src="../pics/agnes-h.jpg" alt="Agnes Halmer"></a><figcaption>Agnes Halmer</figcaption></figure>
+                    <figure><a href="../pics/sandra-s.jpg" target="_blank"><img src="../pics/sandra-s.jpg" alt="Sandra Scharner"></a><figcaption>Sandra Scharner</figcaption></figure>
                 </div>
             </div>
-
-            <!-- Weitere Gruppen hier -->
-
             <div class="musiker-group">
                 <h3>Schlagwerk:</h3>
                 <div class="group-grid">
-                    <figure>
-                        <a href="../pics/jakob-d.jpg" target="_blank"><img src="../pics/jakob-d.jpg" alt="Jakob Drescher"></a>
-                        <figcaption>Jakob Drescher</figcaption>
-                    </figure>
-                    <figure>
-                        <a href="../pics/martin-h.jpg" target="_blank"><img src="../pics/martin-h.jpg" alt="Martin Heindl"></a>
-                        <figcaption>Martin Heindl</figcaption>
-                    </figure>
+                    <figure><a href="../pics/jakob-d.jpg" target="_blank"><img src="../pics/jakob-d.jpg" alt="Jakob Drescher"></a><figcaption>Jakob Drescher</figcaption></figure>
+                    <figure><a href="../pics/martin-h.jpg" target="_blank"><img src="../pics/martin-h.jpg" alt="Martin Heindl"></a><figcaption>Martin Heindl</figcaption></figure>
                 </div>
             </div>
+            <!-- Weitere Musikergruppen hier einfügen -->
         </div>
     </main>
     <footer>
         <div class="fusseffekte">
-            <a class="fusseffekte" href="https://www.instagram.com/musikverein_oberndorf_melk/">
-                <img src="../pics/InstaOutlines.svg" height="50px" width="56px" alt="InstaOutlines">
-            </a>
+            <a class="fusseffekte" href="https://www.instagram.com/musikverein_oberndorf_melk/"><img src="../pics/InstaOutlines.svg" height="50px" width="56px" alt="InstaOutlines"></a>
             <img src="../pics/wappen-obi.png" alt="Wappen Oberndorf">
-            <a class="fusseffekte" href="https://www.facebook.com/groups/295921213833277">
-                <img src="../pics/FacebookOutlines.svg" height="31.5px" width="35px" alt="Facebook">
-            </a>
+            <a class="fusseffekte" href="https://www.facebook.com/groups/295921213833277"><img src="../pics/FacebookOutlines.svg" height="31.5px" width="35px" alt="Facebook"></a>
             <p class="fusseffekte">&copy; 2024 Musikverein Oberndorf an der Melk. Alle Rechte vorbehalten.</p>
         </div>
     </footer>

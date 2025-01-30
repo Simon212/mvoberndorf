@@ -45,7 +45,7 @@ padding-bottom: 10px;
 padding-left: 5vw;
 padding-right:5vw;
 overflow: hidden;
-background-color: #000000;
+background-color: #9e886c;
 }
 
 nav li {
@@ -55,7 +55,7 @@ margin-top: 5px;
 
 nav li a {
 display: block;
-color: white;
+color: rgb(75, 74, 74);
 text-align: center;
 padding-left: 3vw;
 padding-right: 3vw;
@@ -67,7 +67,7 @@ transition: 0.5s;
 
 
 .hovern a:hover:not(.active) {
-background-color: #e03d02;
+background-color: #322c2a;
 transition: 0.4s;
 }
 

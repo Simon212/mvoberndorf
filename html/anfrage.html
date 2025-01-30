@@ -8,16 +8,15 @@
     <style>
         body {
             background-color: #f0f0f0;
-        }
-        body main {
             font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 0;
-
         }
-        h1{
+        h1 {
             text-align: center;
         }
         form {
@@ -27,7 +26,7 @@
             padding: 20px;
             background-color: white;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);                                                                                                                                                                                                                                                                    
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             margin: 20px 0;
             max-width: 600px;
             width: 100%;
@@ -45,8 +44,6 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             box-sizing: border-box;
-        }
-        textarea {
             resize: vertical;
             height: 100px;
         }
@@ -64,7 +61,7 @@
         <ul>
             <li><a href="../index.html"><img class="logonav" src="../pics/mvlogovektor.svg" alt="Logo MVO"></a></li>
             <li class="hovern"><a href="./termine.html">Termine</a></li>
-            <li class="hovern"><a href="./musiker.html">Musiker</a></li>
+            <li class="hovern"><a href="./musiker.html">Mitglieder</a></li>
             <li class="hovern"><a href="./vorstand.html">Vorstand</a></li>
             <li class="hovern"><a href="./geschichte.html">Geschichte</a></li>
             <li class="hovern"><a href="./kontakt.html">Kontakt</a></li>
@@ -72,31 +69,24 @@
         </ul>
     </nav>
     <main>
-        <!--<h3 id="block">Bei Anfragen bezüglich Frühschoppen, Dämmerschoppen, Begräbnissen, Gestaltungen von Messen, oder auf besonderem Wunsch, Ausrückungen in Quartett-/Quintett- Besetzungen und dergleichen können Sie uns zusätzlich unter der Nummer des Kapellmeisters erreichen. <a href="./kontakt.html">(Kontakt)</a> </h3>-->
-    
-   
-        <body>
-            <h2>Anfrageformular</h2>
-                <form action="mailto:fra.sturmlechner" method="post" enctype="text/plain">
-                <label for="name">Ihr Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Ihre E-Mail:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="message">Ihre Anfrage:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                <input class="button" type="submit" value="Absenden">
-            </form>
-    
+        <h2>Anfrageformular</h2>
+        <form action="mailto:fra.sturmlechner@example.com" method="post" enctype="text/plain">
+            <label for="name">Ihr Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Ihre E-Mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Ihre Anfrage:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <input class="button" type="submit" value="Absenden">
+        </form>
     </main>
-<footer>
-        <div class="fusseffekte" style="margin 0 0 0 0;>
-            <a class="fusseffekte" href="https://www.instagram.com/musikverein_oberndorf_melk/"><img src="../pics/InstaOutlines.svg" height="50px" width="56px" alt="InstaOutlines"></a>
+    <footer>
+        <div class="fusseffekte">
+            <a href="https://www.instagram.com/musikverein_oberndorf_melk/"><img src="../pics/InstaOutlines.svg" height="50px" width="56px" alt="Instagram"></a>
             <img src="../pics/wappen-obi.png" alt="Wappen Oberndorf">
-            <a class="fusseffekte" href="https://www.facebook.com/groups/295921213833277"><img src="../pics/FacebookOutlines.svg" height="31.5px" width="35px" alt="Facebook"></a>
-            <p class="fusseffekte">&copy; 2024 Musikverein Oberndorf an der Melk. Alle Rechte vorbehalten.</p>
+            <a href="https://www.facebook.com/groups/295921213833277"><img src="../pics/FacebookOutlines.svg" height="31.5px" width="35px" alt="Facebook"></a>
+            <p>&copy; 2024 Musikverein Oberndorf an der Melk. Alle Rechte vorbehalten.</p>
         </div>
-</footer>   
-</body> 
-
-
+    </footer>
+</body>
 </html>

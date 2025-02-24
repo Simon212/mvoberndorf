@@ -58,14 +58,24 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 15px;
+            background-color: inherit;
         }
         nav ul li {
             display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li:hover {
+            background-color: rgba(0, 0, 0, 0.1);
         }
         nav ul li a {
             text-decoration: none;
             padding: 10px 15px;
             display: block;
+            color: inherit;
+        }
+        .logonav {
+            width: 120px;
+            height: auto;
         }
         
         @media (max-width: 768px) {

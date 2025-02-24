@@ -8,19 +8,40 @@
     <style>
         body {
             background-color: white;
-        }
-        h2 {
-            margin-bottom: 70px;
-        }
-        h3 {
-            font-family: poetsen;
+            margin: 0;
+            font-family: Arial, sans-serif;
             text-align: center;
-            padding-bottom: 50px;
-            font-size: 30px;
-            font-weight: light;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav ul li {
+            margin: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
         }
         video {
-            padding-top: 5px;
+            max-width: 90%;
+            height: auto;
         }
         .instagram-feed {
             display: flex;
@@ -29,57 +50,61 @@
             width: 100%;
             text-align: center;
         }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        footer div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
     </style>
 </head>
-    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3WDZPLG305"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3WDZPLG305');
-</script>
-<body class="Zentriert">
+<body>
     <nav>
         <ul>
-            <li><a href="./index.html"><img style="padding: 0; margin: 0;" class="logonav" src="./pics/mvlogovektor.svg" alt="Logo MVO"></a></li>
-            <li class="hovern"><a href="./html/termine.html">Termine</a></li>
-            <li class="hovern"><a href="./html/musiker.html">Musiker</a></li>
-            <li class="hovern"><a href="./html/vorstand.html">Vorstand</a></li>
-            <li class="hovern"><a href="./html/geschichte.html">Geschichte</a></li>
-            <li class="hovern"><a href="./html/kontakt.html">Kontakt</a></li>
-            <li class="hovern"><a href="./html/anfrage.html">Anfragen</a></li>
+            <li><a href="./index.html"><img class="logonav" src="./pics/mvlogovektor.svg" alt="Logo MVO"></a></li>
+            <li><a href="./html/termine.html">Termine</a></li>
+            <li><a href="./html/musiker.html">Musiker</a></li>
+            <li><a href="./html/vorstand.html">Vorstand</a></li>
+            <li><a href="./html/geschichte.html">Geschichte</a></li>
+            <li><a href="./html/kontakt.html">Kontakt</a></li>
+            <li><a href="./html/anfrage.html">Anfragen</a></li>
         </ul>
     </nav>
-
     <main>
         <h1>Herzlich Willkommen auf der offiziellen Homepage des Musikvereins Oberndorf an der Melk!</h1>
-        <h2 style="font-style: italic; color: grey; padding-bottom: 5px; margin-bottom: 5px;">Diese Website wird zur Zeit aktualisiert...</h2>
-        <div>
-            <figure>
-                <video controls autoplay muted>
-                <source src="./pics/einstiegsvideo.mp4" type="video/mp4" style="display: ;">
-            </figure>
+        <h2 style="font-style: italic; color: grey;">Diese Website wird zur Zeit aktualisiert...</h2>
+        <div class="video-container">
+            <video controls autoplay muted>
+                <source src="./pics/einstiegsvideo.mp4" type="video/mp4">
+                Dein Browser unterstützt dieses Video nicht.
+            </video>
         </div>
-        <div>
-            <h2>Unsere letzten Instagram-Posts</h2>
-        </div>
+        <h2>Unsere letzten Instagram-Posts</h2>
         <div class="instagram-feed">
             <script src="https://static.elfsight.com/platform/platform.js" async></script>
             <div class="elfsight-app-410083f6-841c-4192-aee9-d5fe08278de1" data-elfsight-app-lazy></div>
         </div>
     </main>
-
     <footer>
-        <div class="fusseffekte">
-            <a class="fusseffekte" href="https://www.instagram.com/musikverein_oberndorf_melk/"><img src="./pics/InstaOutlines.svg" height="50px" width="56px" alt="InstaOutlines"></a>
+        <div>
+            <a href="https://www.instagram.com/musikverein_oberndorf_melk/"><img src="./pics/InstaOutlines.svg" height="50" alt="Instagram"></a>
             <img src="./pics/wappen-obi.png" alt="Wappen Oberndorf">
-            <a class="fusseffekte" href="https://www.facebook.com/groups/295921213833277"><img src="./pics/FacebookOutlines.svg" height="31.5px" width="35px" alt="Facebook"></a>
-            <p class="fusseffekte">&copy; 2024 Musikverein Oberndorf an der Melk. Alle Rechte vorbehalten.</p>
+            <a href="https://www.facebook.com/groups/295921213833277"><img src="./pics/FacebookOutlines.svg" height="31" alt="Facebook"></a>
+            <p>&copy; 2024 Musikverein Oberndorf an der Melk. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
-
 </body>
 </html>

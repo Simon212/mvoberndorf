@@ -8,25 +8,21 @@
     <style>
         body {
             background-color: white;
-            margin: 0;
-            font-family: Arial, sans-serif;
+        }
+        h2 {
+            margin-bottom: 70px;
+        }
+        h3 {
+            font-family: poetsen;
             text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        h1, h2 {
-            margin-bottom: 20px;
-        }
-        .video-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
+            padding-bottom: 50px;
+            font-size: 30px;
+            font-weight: light;
         }
         video {
-            max-width: 90%;
-            height: auto;
+            padding-top: 5px;
+            display: block;
+            margin: 0 auto;
         }
         .instagram-feed {
             display: flex;
@@ -35,68 +31,33 @@
             width: 100%;
             text-align: center;
         }
-        
-        /* Responsive Navigation */
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-        nav ul li {
-            display: inline-block;
-            transition: background-color 0.3s ease;
-        }
-        nav ul li:hover {
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-        nav ul li a {
-            text-decoration: none;
-            padding: 10px 15px;
-            display: block;
-        }
-        .logonav {
-            width: 120px;
-            height: auto;
-        }
-        
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            nav ul li {
-                width: 100%;
-                text-align: center;
-            }
-        }
     </style>
 </head>
-<body>
+<body class="Zentriert">
     <nav>
         <ul>
-            <li><a href="./index.html"><img class="logonav" src="./pics/mvlogovektor.svg" alt="Logo MVO"></a></li>
-            <li><a href="./html/termine.html">Termine</a></li>
-            <li><a href="./html/musiker.html">Musiker</a></li>
-            <li><a href="./html/vorstand.html">Vorstand</a></li>
-            <li><a href="./html/geschichte.html">Geschichte</a></li>
-            <li><a href="./html/kontakt.html">Kontakt</a></li>
-            <li><a href="./html/anfrage.html">Anfragen</a></li>
+            <li><a href="./index.html"><img style="padding: 0; margin: 0;" class="logonav" src="./pics/mvlogovektor.svg" alt="Logo MVO"></a></li>
+            <li class="hovern"><a href="./html/termine.html">Termine</a></li>
+            <li class="hovern"><a href="./html/musiker.html">Musiker</a></li>
+            <li class="hovern"><a href="./html/vorstand.html">Vorstand</a></li>
+            <li class="hovern"><a href="./html/geschichte.html">Geschichte</a></li>
+            <li class="hovern"><a href="./html/kontakt.html">Kontakt</a></li>
+            <li class="hovern"><a href="./html/anfrage.html">Anfragen</a></li>
         </ul>
     </nav>
     <main>
         <h1>Herzlich Willkommen auf der offiziellen Homepage des Musikvereins Oberndorf an der Melk!</h1>
-        <h2 style="font-style: italic; color: grey;">Diese Website wird zur Zeit aktualisiert...</h2>
-        <div class="video-container">
-            <video controls autoplay muted>
-                <source src="./pics/einstiegsvideo.mp4" type="video/mp4">
-                Dein Browser unterstützt dieses Video nicht.
-            </video>
+        <h2 style="font-style: italic; color: grey; padding-bottom: 5px; margin-bottom: 5px;">Diese Website wird zur Zeit aktualisiert...</h2>
+        <div>
+            <figure>
+                <video controls autoplay muted>
+                <source src="./pics/einstiegsvideo.mp4" type="video/mp4" style="display: ;">
+                </video>
+            </figure>
         </div>
-        <h2>Unsere letzten Instagram-Posts</h2>
+        <div>
+            <h2>Unsere letzten Instagram-Posts</h2>
+        </div>
         <div class="instagram-feed">
             <script src="https://static.elfsight.com/platform/platform.js" async></script>
             <div class="elfsight-app-410083f6-841c-4192-aee9-d5fe08278de1" data-elfsight-app-lazy></div>

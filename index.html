@@ -23,6 +23,8 @@
             padding-top: 5px;
             display: block;
             margin: 0 auto;
+            max-width: 100%;
+            height: auto;
         }
         .instagram-feed {
             display: flex;
@@ -30,6 +32,17 @@
             align-items: center;
             width: 100%;
             text-align: center;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -51,7 +64,7 @@
         <div>
             <figure>
                 <video controls autoplay muted>
-                <source src="./pics/einstiegsvideo.mp4" type="video/mp4" style="display:block;">
+                <source src="./pics/einstiegsvideo.mp4" type="video/mp4" style="display: ;">
                 </video>
             </figure>
         </div>

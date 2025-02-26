@@ -6,85 +6,33 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>MVO-Geschichte</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        
-        .content-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-            border-radius: 5px;
-        }
-        
-        .image-container {
+              h1 {
             text-align: center;
-            margin: 20px 0;
+            padding-bottom: 15px;
         }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        nav {
-            background: #333;
-            padding: 10px 0;
-        }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
-        }
-        
-        nav ul li {
-            margin: 0 15px;
-        }
-        
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px;
-        }
-        
-        nav ul li a:hover, .active {
-            background: #555;
-            border-radius: 5px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: white;
-            margin-top: 20px;
-        }
-        
-        .fusseffekte img {
-            max-width: 40px;
-            margin: 10px;
-        }
-
-        /* Responsive Anpassungen */
         @media (max-width: 768px) {
             nav ul {
+                display: flex;
                 flex-direction: column;
                 align-items: center;
+                padding: 0;
             }
             nav ul li {
-                margin: 10px 0;
+                width: 100%;
+                text-align: center;
             }
-            .content-container {
-                width: 90%;
-                padding: 10px;
+            iframe {
+                width: 100%;
+                height: 400px;
+            }
+            footer .fusseffekte {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            footer img {
+                margin: 5px 0;
             }
         }
     </style>

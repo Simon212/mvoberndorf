@@ -4,75 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>MVO-Vorstand</title>
+    <link rel="stylesheet" href="../css/stylemusiker.css">
+    <title>MVO-Mitglieder</title>
     <style>
-        @font-face {
-            font-family: "HWGothic";
-            src: url(../font-families/HWYGEXPD.TTF) format("truetype");
-        }
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        h1 {
-            padding-top: 20px;
-        }
-        h3 {
-            padding-top: 10px;
-            font-size: 24px;
-            font-family: HWGothic;
-        }
-        .musiker-container {
+        nav ul {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 1px;
-            padding: 2px;
+            padding: 0;
+            list-style: none;
         }
-        .musikerbild {
-            flex: 1 1 calc(30% - 15px);
-            max-width: calc(30% - 15px);
-            margin-bottom: 10px;
-            text-align: center;
+        nav ul li {
+            margin: 5px;
         }
-        figure {
-            padding: 10px;
-            border-radius: 5px;
-            margin: 0 auto; 
-        }
-        figure img {
+        .logonav {
             max-width: 100%;
             height: auto;
-            padding-left: 0px;
         }
-        figure figcaption {
-            padding: 5px;
-            border-radius: 5px;
-            margin-top: 5px;
+        .fusseffekte {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .logonav {
+                width: 80px;
+            }
+            nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+            .fusseffekte img {
+                max-width: 80%;
+            }
         }
     </style>
 </head>
-<body class="Zentriert">
+<body>
     <nav>
         <ul>
             <li><a href="../index.html"><img class="logonav" src="../pics/mvlogovektor.svg" alt="Logo MVO"></a></li>
             <li class="hovern"><a href="./termine.html">Termine</a></li>
-            <li class="hovern"><a href="./musiker.html">Mitglieder</a></li>
-            <li class="hovern"><a class="active" href="./vorstand.html">Vorstand</a></li>
+            <li class="hovern"><a class="active" href="./musiker.html">Mitglieder</a></li>
+            <li class="hovern"><a href="./vorstand.html">Vorstand</a></li>
             <li class="hovern"><a href="./geschichte.html">Geschichte</a></li>
             <li class="hovern"><a href="./kontakt.html">Kontakt</a></li>
             <li class="hovern"><a href="./anfrage.html">Anfragen</a></li>
         </ul>
     </nav>
     <main>
-        <h1>In Aktualisierung...</h1>
+        <div>
+            <h1>In Aktualisierung...</h1>
+        </div>
     </main>
     <footer>
-        <div  class="fusseffekte">
-            <a class="fusseffekte" href="https://www.instagram.com/musikverein_oberndorf_melk/"><img src="../pics/InstaOutlines.svg" height="50px" width="56px" alt="InstaOutlines"></a>
+        <div class="fusseffekte">
+            <a class="fusseffekte" href="https://www.instagram.com/musikverein_oberndorf_melk/">
+                <img src="../pics/InstaOutlines.svg" height="50px" width="56px" alt="Instagram">
+            </a>
             <img src="../pics/wappen-obi.png" alt="Wappen Oberndorf">
-            <a class="fusseffekte" href="https://www.facebook.com/groups/295921213833277"><img src="../pics/FacebookOutlines.svg" height="31.5px" width="35px" alt="Facebook"></a>
+            <a class="fusseffekte" href="https://www.facebook.com/groups/295921213833277">
+                <img src="../pics/FacebookOutlines.svg" height="31.5px" width="35px" alt="Facebook">
+            </a>
             <p class="fusseffekte">&copy; 2024 Musikverein Oberndorf an der Melk. Alle Rechte vorbehalten.</p>
         </div>
-    </footer>   
+    </footer>
+</body>
 </html>

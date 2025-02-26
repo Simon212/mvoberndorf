@@ -6,6 +6,37 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/stylemusiker.css">
     <title>MVO-Mitglieder</title>
+    <style>
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 5px;
+        }
+        .logonav {
+            max-width: 100%;
+            height: auto;
+        }
+        .fusseffekte {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .fusseffekte img {
+                max-width: 80%;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>

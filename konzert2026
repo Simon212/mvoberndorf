@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="mvoberndorf/Konzert2026.png" alt="Bild Konzerteinladung">
+    <img src="./mvoberndorf/Konzert2026.png" alt="Bild Konzerteinladung">
 </body>
 </html>
